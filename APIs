@@ -1,0 +1,21 @@
+import requests
+
+#American cuisine
+american = requests.post("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?cuisine=american&number=10&offset=0&type=main+course&query=burger",
+ headers={
+   "X-RapidAPI-Key": "84e499cdd1mshf3881fa78dee15cp132dbejsn0f44dfa5ad57"
+ }
+)
+#Caribbean cuisine
+caribbean = requests.post("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?cuisine=caribbean&number=10&offset=0&type=main+course&query=meat",
+ headers={
+   "X-RapidAPI-Key": "84e499cdd1mshf3881fa78dee15cp132dbejsn0f44dfa5ad57"
+ }
+)
+#British cuisine
+
+british = requests.post("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?cuisine=british&number=10&offset=0&type=main+course&query=meat",
+ headers={
+   "X-RapidAPI-Key": "84e499cdd1mshf3881fa78dee15cp132dbejsn0f44dfa5ad57"
+ }
+)
